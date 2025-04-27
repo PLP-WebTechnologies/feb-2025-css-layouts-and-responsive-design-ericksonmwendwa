@@ -1,0 +1,90 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main Header */
+#main-header {
+  background-color: #1A5276;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  font-size: 2.5em;
+}
+
+/* Content Container: Using Flexbox to structure the sections */
+.content-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+/* Text Content */
+.text-content {
+  color: #333;
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin: 20px;
+  padding: 15px;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 8px;
+  flex: 1 1 45%;
+  max-width: 45%;
+}
+
+/* Image Section */
+.image-section {
+  flex: 1 1 45%;
+  max-width: 45%;
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Footer Section */
+.footer {
+  background-color: #1A5276;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+
+  /* For tablet or smaller screens */
+  .text-content,
+  .image-section {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* For mobile screens */
+  #main-header {
+    font-size: 1.8em;
+    padding: 20px;
+  }
+
+  .text-content {
+    font-size: 1em;
+    padding: 10px;
+  }
+
+  .footer {
+    font-size: 0.9em;
+  }
+}
